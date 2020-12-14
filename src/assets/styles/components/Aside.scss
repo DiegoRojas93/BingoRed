@@ -1,0 +1,43 @@
+.aside__container{
+	width: 100%;
+	height: 100%;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid #ccc;
+
+	& img{
+		margin-bottom: 2rem;
+	}
+
+	& span{
+		color: #ccc;
+		font-size: 1.6rem;
+	}
+
+	& li{
+		height: 5rem;
+		padding: 1rem 0rem 1rem 4rem;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		border-top: 1px solid #ccc;
+
+		& .icons-list{
+			font-size: 2rem;
+			margin-right: 1.6rem;
+		}
+
+		&:nth-last-of-type(1){
+			border-bottom: 1px solid #ccc;
+		}
+		&:nth-last-of-type(9){
+			border-top: none;
+		}
+
+		&:hover{
+			background: #eee;
+		}
+	}
+
+}
