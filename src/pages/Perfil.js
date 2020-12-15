@@ -9,7 +9,6 @@ import user from '../../public/assets/images/user.png';
 const Perfil = () => (
 	<section className='perfil'>
 
-
 		<article className='perfil__box'>
 			<div className='perfil__box-data'>
 				<ul className='list'>

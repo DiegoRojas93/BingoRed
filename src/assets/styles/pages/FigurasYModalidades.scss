@@ -1,0 +1,48 @@
+.FigurasYModalidades{
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	padding: 5rem 0rem;
+	// max-height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ddd;
+
+	&__Box{
+		width: 75%;
+		min-height: 75%;
+		height: 75%;
+		max-height: auto;
+		background-color: #fff;
+		border: 1px groove #ccc;
+
+		&-encabezado{
+			height: 6rem;
+			width: 100%;
+			border-bottom: 1px groove #ccc;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			padding-left: 2rem;
+		}
+
+		&-cuerpo{
+			min-height: calc(100% - 6rem);
+			height: calc(auto - 6rem);
+			width: 100%;
+		}
+	}
+}
+
+.figuras{
+	height: auto;
+
+	padding: 2rem;
+	display: grid;
+	grid-template: repeat(2, minmax(200px, auto)) / repeat(3, minmax(100px, 1fr));
+	gap: 2rem;
+
+	grid-auto-rows: minmax(200px, auto);
+	grid-auto-columns: minmax(100px, auto);
+}
