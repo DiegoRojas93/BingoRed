@@ -4,13 +4,15 @@ import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faUserAlt } from '@fortawesome/free-solid-svg-icons';
 
-import '../assets/styles/router/Home.scss'
+import '../assets/styles/router/Home.scss';
 
-import Aside from '../components/Aside'
-import User from '../components/User'
-import Menu from '../pages/Menu'
-import Perfil from '../pages/Perfil'
-import FigurasYModalidades from '../pages/FigurasYModalidades'
+import Aside from '../components/Aside';
+import User from '../components/User';
+
+import Menu from '../pages/Menu';
+import Perfil from '../pages/Perfil';
+import FigurasYModalidades from '../pages/FigurasYModalidades';
+import NotFound from '../pages/NotFound'
 
 class Home extends Component {
 
@@ -45,7 +47,8 @@ class Home extends Component {
 							<Switch>
 								<Route exact path='/' component={Menu}/>
 								<Route exact path='/perfil' component={Perfil}/>
-								{/* <Route exact path='/' component={FigurasYModalidades}/> */}
+								<Route exact path='/FigurasYModalidades' component={FigurasYModalidades}/>
+								<Route component={NotFound}/>
 							</Switch>
 						</BrowserRouter>
 					</article>

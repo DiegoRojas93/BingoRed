@@ -22,7 +22,7 @@ class Menu extends React.Component{
 							</article>
 						</NavLink>
 
-						<NavLink to='/perfil' className='items'>
+						<NavLink to='/NotFound' className='items'>
 							<article className='items__container'>
 								<div className='items__container-icons'>
 									<FontAwesomeIcon icon={faCrown} className='icons'/>
@@ -31,7 +31,7 @@ class Menu extends React.Component{
 							</article>
 						</NavLink>
 
-						<NavLink to='/perfil' className='items'>
+						<NavLink to='/NotFound' className='items'>
 							<article className='items__container'>
 								<div className='items__container-icons'>
 									<FontAwesomeIcon icon={faDollarSign} className='icons'/>
@@ -40,7 +40,7 @@ class Menu extends React.Component{
 							</article>
 						</NavLink>
 
-						<NavLink to='/perfil' className='items'>
+						<NavLink to='/NotFound' className='items'>
 							<article className='items__container'>
 								<div className='items__container-icons'>
 									<FontAwesomeIcon icon={faCreditCard} className='icons'/>
@@ -49,7 +49,7 @@ class Menu extends React.Component{
 							</article>
 						</NavLink>
 
-						<NavLink to='/perfil' className='items'>
+						<NavLink to='/FigurasYModalidades' className='items'>
 							<article className='items__container'>
 								<div className='items__container-icons'>
 									<FontAwesomeIcon icon={faTh} className='icons'/>
@@ -58,7 +58,7 @@ class Menu extends React.Component{
 							</article>
 						</NavLink>
 
-						<NavLink to='/perfil' className='items'>
+						<NavLink to='/NotFound' className='items'>
 							<article className='items__container'>
 								<div className='items__container-icons'>
 									<FontAwesomeIcon icon={faShoppingCart} className='icons'/>
