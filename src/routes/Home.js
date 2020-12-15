@@ -8,6 +8,7 @@ import '../assets/styles/router/Home.scss'
 
 import Aside from '../components/Aside'
 import User from '../components/User'
+import Menu from '../pages/Menu'
 import Perfil from '../pages/Perfil'
 import FigurasYModalidades from '../pages/FigurasYModalidades'
 
@@ -16,7 +17,7 @@ class Home extends Component {
 	constructor(props){
 		super(props),
 
-		this.state={ toogle : false, toogleUser : false }
+		this.state={ toogle : true, toogleUser : false }
 		this.handleClick = this.handleClick.bind(this);
 		this.handleClickUser = this.handleClickUser.bind(this);
 	}
@@ -42,8 +43,9 @@ class Home extends Component {
 					<article className='page'>
 						<BrowserRouter >
 							<Switch>
-								{/* <Route exact path='/' component={Perfil}/> */}
-								<Route exact path='/' component={FigurasYModalidades}/>
+								<Route exact path='/' component={Menu}/>
+								<Route exact path='/perfil' component={Perfil}/>
+								{/* <Route exact path='/' component={FigurasYModalidades}/> */}
 							</Switch>
 						</BrowserRouter>
 					</article>

@@ -21,13 +21,6 @@ const FigurasYModalidades = () => (
 					<Figura />
 					<Figura />
 					<Figura />
-
-					<Figura />
-					<Figura />
-					<Figura />
-					<Figura />
-					<Figura />
-					<Figura />
 				</section>
 			</div>
 		</article>

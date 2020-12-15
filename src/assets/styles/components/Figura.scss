@@ -35,11 +35,12 @@
 		&-celda{
 			background-color: gray;
 			border-radius: 0.5rem;
+		}
 
-			&:active{
-				background-color: rgb(0, 217, 255);
-				border: 1px solid green;
-			}
+		& .active{
+			background-color: rgb(0, 217, 255);
+			border-radius: 0.5rem;
+			border: 1px solid green;
 		}
 	}
 }

@@ -1,0 +1,69 @@
+.menu{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ddd;
+
+	&__box{
+		width: 75%;
+		height: 75%;
+		background-color: #fff;
+		border: 1px groove #ccc;
+		padding: 0rem 4rem;
+
+		&-content{
+			height: 80%;
+			width: 100%;
+			display: grid;
+			padding: 2rem;
+			grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+			gap: 3rem;
+		}
+
+		&-copyright{
+			height: 20%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+
+.items{
+	height: 100%;
+	width: 100%;
+	border-radius: 0.5rem;
+	box-shadow: 1px 1px 7px 0px #000;
+	overflow: hidden;
+	text-decoration: none;
+	color: #000;
+	transform: scale(1);
+	transition: all 1s;
+
+	&:hover{
+		transform: scale(1.1);
+		box-shadow: 1px 1px 14px 0px #000;
+	}
+
+	&__container{
+		height: 100%;
+		width: 100%;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&-icons{
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+
+.icons{
+	font-size: 5rem;
+}
