@@ -8,6 +8,10 @@ section{
 		width: 25%;
 	}
 
+	& main{
+		width: 100%;
+	}
+
 	& .user{
 		width: auto;
 		height: 200px;
@@ -63,5 +67,4 @@ header{
 	font-size: 2rem;
 	color: white;
 }
-
 

@@ -12,22 +12,22 @@ const User = () => (
 			<h1>SuperAdmin</h1>
 		</article>
 		<article className='user__container-item'>
-			<Link to='/perfil' className='links'>
+			{/* <Link to='/perfil' className='links'>
 				<FontAwesomeIcon icon={faIdCardAlt} className='user__icons'/>
 				<h3>Perfil</h3>
-			</Link>
+			</Link> */}
 		</article>
 		<article className='user__container-item'>
-			<Link className='links'>
+			{/* <Link className='links'>
 				<FontAwesomeIcon icon={faPaintBrush} className='user__icons'/>
 				<h3>Temas</h3>
-			</Link>
+			</Link> */}
 		</article>
 		<article className='user__container-item'>
-			<Link to='/' className='links'>
+			{/* <Link to='/' className='links'>
 				<FontAwesomeIcon icon={faSignOutAlt} className='user__icons'/>
 				<h3>Cerrar sesión</h3>
-			</Link>
+			</Link> */}
 		</article>
 	</section>
 )

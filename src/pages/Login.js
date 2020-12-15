@@ -5,33 +5,36 @@ import '../Assets/styles/pages/Login.scss';
 import Logo from '../../public/assets/images/logo.png';
 import Bingo from '../../public/assets/images/Bingo.jpg';
 
-const Login = () => (
-	<section className='login' style={{ backgroundImage:`url(${Bingo})`}}>
-		<article className='login__box'>
-			<img src={Logo} alt='logo de BingoRed'/>
+class Login extends React.Component {
 
-			<form action="">
+	render(){
+		return (
+			<section className='login' style={{ backgroundImage:`url(${Bingo})`}}>
+				<article className='login__box'>
+					<img src={Logo} alt='logo de BingoRed'/>
 
-				<label htmlFor="correo">
-					<input type="text" id='correo' name='correo' placeholder='correo' required autoComplete='email'/>
-				</label>
-				<label htmlFor="contraseña">
-					<input type="password" id='contraseña' name='contraseña' placeholder='contraseña' required/>
-				</label>
+					<form action="" >
 
-				<Link exact="true" to='/Home' >
-					<button>
-						INICIAR SESIÓN
-					</button>
-				</Link>
+						<label htmlFor="correo">
+							<input type="text" id='correo' name='correo' placeholder='correo' required autoComplete='email'/>
+						</label>
+						<label htmlFor="contraseña">
+							<input type="password" id='contraseña' name='contraseña' placeholder='contraseña' required/>
+						</label>
 
-			</form>
+						<button type='button' onClick={this.props.onChange}>
+							INICIAR SESIÓN
+						</button>
 
-			<div className='version'>
-				<span>Version: 23 de Febrero 2020</span>
-			</div>
-		</article>
-	</section>
-)
+					</form>
+
+					<div className='version'>
+						<span>Version: 23 de Febrero 2020</span>
+					</div>
+				</article>
+			</section>
+		)
+	}
+}
 
 export default Login;
