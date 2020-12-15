@@ -48,14 +48,6 @@ const Aside = () =>(
 			</li>
 
 		</ul>
-		{/* <button>Dashboard</button>
-		<button>Usuarios</button>
-		<button>Reyes</button>
-		<button>Acumilados</button>
-		<button>Cartones y modulos</button>
-		<button>Figuras y Modalidades</button>
-		<button>Valores unitarios</button>
-		<button>Tables</button> */}
 	</section>
 )
 

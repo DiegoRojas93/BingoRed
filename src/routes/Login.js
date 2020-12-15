@@ -1,7 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
-import '../Assets/styles/pages/Login.scss';
+import '../Assets/styles/router/Login.scss';
 import Logo from '../../public/assets/images/logo.png';
 import Bingo from '../../public/assets/images/Bingo.jpg';
 

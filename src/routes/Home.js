@@ -4,12 +4,12 @@ import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faUserAlt } from '@fortawesome/free-solid-svg-icons';
 
-import '../assets/styles/routes/Home.scss'
+import '../assets/styles/router/Home.scss'
 
 import Aside from '../components/Aside'
 import User from '../components/User'
-import Perfil from '../components/Perfil'
-import Perfil2 from '../components/Perfil2'
+import Perfil from '../pages/Perfil'
+import FigurasYModalidades from '../pages/FigurasYModalidades'
 
 class Home extends Component {
 
@@ -32,27 +32,24 @@ class Home extends Component {
 							<button onClick={this.handleClick}>
 								<FontAwesomeIcon icon={faBars} className='icon bars'/>
 							</button>
-							{/* <Link to='/' className='title'>
-								<h1>SALVA Verano 22</h1>
-							</Link> */}
-								<h1>SALVA Verano 22</h1>
+								<h1>SALA Verano 22</h1>
 						</section>
 						<button onClick={this.handleClickUser}>
 							<FontAwesomeIcon icon={faUserAlt} className='icon bars'/>
 						</button>
 					</header>
 
-					<article>
+					<article className='page'>
 						<BrowserRouter >
 							<Switch>
-								<Route exact path='/' component={Perfil}/>
-								<Route exact path='/perfil2' component={Perfil2}/>
+								{/* <Route exact path='/' component={Perfil}/> */}
+								<Route exact path='/' component={FigurasYModalidades}/>
 							</Switch>
 						</BrowserRouter>
 					</article>
 				</main>
 
-				{this.state.toogleUser &&	<article className='user'><User /></article>}
+				{/* {this.state.toogleUser &&	<article className='user'><User /></article>} */}
 
 			</section>
 		);
