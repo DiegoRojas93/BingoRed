@@ -8,14 +8,16 @@ import '../assets/styles/routes/Home.scss'
 
 import Aside from '../components/Aside'
 
+import User from '../components/User'
+
 class Home extends Component {
 
 	constructor(props){
 		super(props),
 
-		this.state={ toogle : false }
+		this.state={ toogle : false, toogleUser : false }
 		this.handleClick = this.handleClick.bind(this);
-		console.log('toogle: ', this.state.toogle);
+		this.handleClickUser = this.handleClickUser.bind(this);
 	}
 
 	render(){
@@ -31,15 +33,24 @@ class Home extends Component {
 							<h1>SALVA Verano 22</h1>
 						</Link>
 					</section>
-					<FontAwesomeIcon icon={faUserAlt} className='icon bars'/>
+					<button onClick={this.handleClickUser}>
+						<FontAwesomeIcon icon={faUserAlt} className='icon bars'/>
+					</button>
 				</header>
+
+				{this.state.toogleUser &&	<article className='user'><User /></article>}
+
+				
 			</section>
 		);
 	}
 
 	handleClick(){
 		this.setState({toogle: !this.state.toogle})
-		console.log('toogle: ', this.state.toogle);
+	}
+
+	handleClickUser(){
+		this.setState({toogleUser: !this.state.toogleUser})
 	}
 }
 

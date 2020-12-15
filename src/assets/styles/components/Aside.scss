@@ -33,6 +33,10 @@
 		}
 		&:nth-last-of-type(9){
 			border-top: none;
+
+			&:hover{
+				background: #fff;
+			}
 		}
 
 		&:hover{
