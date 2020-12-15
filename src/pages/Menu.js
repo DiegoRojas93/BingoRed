@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faIdCardAlt, faCrown, faDollarSign, faCreditCard, faTh, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-import '../assets/styles/pages/Menu.scss'
+import '../assets/styles/pages/Menu.scss';
 
 class Menu extends React.Component{
 	render(){

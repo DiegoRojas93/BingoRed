@@ -3,11 +3,22 @@
 	min-height: 100%;
 	height: auto;
 	padding: 5rem 0rem;
-	// max-height: auto;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: #ddd;
+
+	&__back{
+		width: 75%;
+		height: auto;
+		margin-bottom: 2rem;
+
+		& button{
+			width: 4rem;
+			padding: 1rem;
+		}
+	}
 
 	&__Box{
 		width: 75%;
