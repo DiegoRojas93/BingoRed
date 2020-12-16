@@ -25,7 +25,21 @@
 		border: 1px groove #ccc;
 		border-radius: 2rem;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+
+		& .subtitle{
+			color: red;
+			text-decoration: none;
+			margin-top: 2rem;
+
+			animation: heart 1s ease infinite alternate;
+		}
 	}
+}
+
+@keyframes heart{
+	from{ transform: scale(1);}
+	to{ transform: scale(1.5);}
 }

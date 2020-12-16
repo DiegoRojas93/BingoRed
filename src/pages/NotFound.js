@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
@@ -25,6 +26,10 @@ class NotFound extends React.Component{
 				</article>
 				<article className='notFound__box'>
 					<h1>NotFound 404</h1>
+					<hr/>
+					<Link to='/home' className='subtitle'>
+						<h3>Go Home</h3>
+					</Link>
 				</article>
 			</section>
 		);

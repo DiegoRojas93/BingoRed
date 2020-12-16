@@ -4,7 +4,7 @@ Esta prueba tecnica se basa en replicar las misma parte estetica y funcional del
 
 ### Visializacion de la prueba
 
-Para poder visualizar el proyecto es necesario dirigirse a esta página y para poder ver el codigo es necesario hacer un `git clone` o descargarse el repositorio en formato `ZIP` de GitHub.
+Para poder visualizar el proyecto es necesario dirigirse a esta [página](https://diegorojas93.github.io/BingoRed/ "página") y para poder ver el codigo es necesario hacer un `git clone` o descargarse el repositorio en formato `ZIP` de GitHub.
 
 Luego de descargado el proyecto necesitaras ejecutar los siguientes lineas de codigo en la terminal de comandos.
 
