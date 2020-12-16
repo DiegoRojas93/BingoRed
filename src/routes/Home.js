@@ -48,7 +48,7 @@ class Home extends Component {
 								<Route exact path='/' component={Menu}/>
 								<Route exact path='/perfil' component={Perfil}/>
 								<Route exact path='/FigurasYModalidades' component={FigurasYModalidades}/>
-								<Route component={NotFound}/>
+								{/* <Route component={NotFound}/> */}
 							</Switch>
 						</BrowserRouter>
 					</article>
