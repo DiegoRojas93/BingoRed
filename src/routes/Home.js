@@ -45,10 +45,10 @@ class Home extends Component {
 					<article className='page'>
 						<BrowserRouter >
 							<Switch>
-								<Route exact path='/' component={Menu}/>
-								<Route exact path='/perfil' component={Perfil}/>
-								<Route exact path='/FigurasYModalidades' component={FigurasYModalidades}/>
-								{/* <Route component={NotFound}/> */}
+								<Route exact path='/home' component={Menu}/>
+								<Route exact path='/home/perfil' component={Perfil}/>
+								<Route exact path='/home/FigurasYModalidades' component={FigurasYModalidades}/>
+								<Route component={NotFound}/>
 							</Switch>
 						</BrowserRouter>
 					</article>
