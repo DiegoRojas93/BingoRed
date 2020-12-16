@@ -5,6 +5,16 @@ import Logo from '../../public/assets/images/logo.png';
 import Bingo from '../../public/assets/images/Bingo.jpg';
 
 class Login extends React.Component {
+	constructor(props){
+		super(props),
+
+		this.handleSubmit = this.handleSubmit.bind(this)
+
+	}
+
+	handleSubmit(e){
+		e.preventDafault()
+	}
 
 	render(){
 		return (
@@ -12,16 +22,27 @@ class Login extends React.Component {
 				<article className='login__box'>
 					<img src={Logo} alt='logo de BingoRed'/>
 
-					<form action="" >
+					<form action="" onSubmit={this.handleSubmit}>
 
 						<label htmlFor="correo">
-							<input type="text" id='correo' name='correo' placeholder='correo' required autoComplete='email'/>
+							<input type="text"
+								id='correo'
+								name='correo'
+								placeholder='correo'
+								required
+								autoComplete='email'
+							/>
 						</label>
 						<label htmlFor="contraseña">
-							<input type="password" id='contraseña' name='contraseña' placeholder='contraseña' required/>
+							<input
+								type="password"
+								id='contraseña'
+								name='contraseña'
+								placeholder='contraseña'
+								required/>
 						</label>
 
-						<button type='button' onClick={this.props.onChange}>
+						<button onClick={this.props.onClick}>
 							INICIAR SESIÓN
 						</button>
 

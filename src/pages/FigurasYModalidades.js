@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../assets/styles/pages/FigurasYModalidades.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 import Figura from '../components/Figura'
 
@@ -20,7 +21,7 @@ class FigurasYModalidades extends React.Component{
 	render(){
 		return(
 			<section className='FigurasYModalidades'>
-			<article className='FigurasYModalidades__back'>
+				<article className='FigurasYModalidades__back'>
 					<button onClick={this.handleBackClick}>
 						<FontAwesomeIcon icon={faArrowLeft}/>
 					</button>
@@ -30,6 +31,11 @@ class FigurasYModalidades extends React.Component{
 						<p>Lista con figuras</p>
 					</div>
 					<div className="FigurasYModalidades__Box-cuerpo">
+						<section className='plus'>
+							<Link to='/NotFound'>
+								<FontAwesomeIcon icon={faPlus} className='plus__icon'/>
+							</Link>
+						</section>
 						<section className='figuras'>
 							<Figura />
 							<Figura />

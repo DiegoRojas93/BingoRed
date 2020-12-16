@@ -35,7 +35,7 @@ class Home extends Component {
 							<button onClick={this.handleClick}>
 								<FontAwesomeIcon icon={faBars} className='icon bars'/>
 							</button>
-								<h1>SALA Verano 22</h1>
+							<h1>SALA Verano 22</h1>
 						</section>
 						<button onClick={this.handleClickUser}>
 							<FontAwesomeIcon icon={faUserAlt} className='icon bars'/>

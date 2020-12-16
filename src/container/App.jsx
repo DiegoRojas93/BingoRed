@@ -10,13 +10,28 @@ class App extends React.Component {
 
 	constructor(props){
 		super(props);
-		this.state = {isLogin: false}
+		this.state = {
+			isLogin: false,
+			form: {correo: '', password: ''}
+		}
 
 		this.handleClick = this.handleClick.bind(this)
+		this.handleChange = this.handleChange.bind(this)
 	}
 
 	handleClick(){
 		this.setState({isLogin: !this.state.isLogin})
+
+		setTimeout(()=>{
+			console.log(this.state.isLogin);
+		},100)
+	}
+
+	handleChange(){
+		this.setState({form:{
+			...this.state.form,
+			[e.target.name] : e.target.value
+		}})
 	}
 
 	render(){
@@ -25,7 +40,15 @@ class App extends React.Component {
 		return (
 
 			<>
-				{ isLoginIn ? <Home /> : <Login onChange={this.handleClick}/> }
+				{ isLoginIn ?
+					<Home />
+					:
+					<Login
+						onClick={this.handleClick}
+						onChange={this.state.from}
+						formValues={this.state.from}
+					/>
+				}
 			</>
 
 		)
